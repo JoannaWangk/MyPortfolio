@@ -37,12 +37,18 @@
   color: var(--text);
   border-bottom: 2px solid var(--accent);
   padding-bottom: 4px;
-  margin-bottom: 48px;
+  margin-bottom: 8px;
   transition: color 0.2s;
 }
 
 .contact-email:hover {
   color: var(--accent);
+}
+
+.contact-email-alt {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 40px;
 }
 
 .contact-socials {
