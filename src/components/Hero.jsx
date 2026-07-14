@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="hero-inner">
         {/* Left */}
         <div className="hero-left fade-in">
-          <p className="hero-eyebrow">→ HI, I'M JOANNA WANG</p>
+          <p className="hero-eyebrow">→ HI, I'M 王棵 JOANNA WANG</p>
 
           <h1 className="hero-title">
             <span className="title-black">产品思维.</span>

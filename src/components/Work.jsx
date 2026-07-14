@@ -4,42 +4,37 @@ import './Work.css'
 const PROJECTS = [
   {
     id: 1,
-    title: '校园二手交易平台',
-    desc: '从零到一设计并推动上线的校园闲置物品交易 App',
-    tags: ['0→1', '用户研究', 'C端'],
+    title: '小红薯 AI 内容生成 Agent',
+    desc: '基于 Coze 平台独立搭建的多模态内容生成智能体，支持全链路自动化生产',
+    tags: ['AI Agent', 'Coze', 'Vibe Coding'],
     color: '#E8D5C0',
-    images: [],
-    background: '校园内存在大量闲置物品，但现有平台安全性低、信任度差，同学之间交易体验不佳。',
-    role: '负责全流程产品设计，包括用户访谈、竞品分析、原型设计及需求文档编写。',
-    highlights: ['深度访谈 30+ 用户，提炼核心痛点', '设计「信用体系」解决信任问题', '输出完整 PRD 及 80+ 页原型'],
-    results: '内测阶段 DAU 破百，好评率 92%，上线 2 周内完成冷启动。',
-    link: '',
+    images: ['/Xiaohongshu_chugao_1.jpg'],
+    link: 'https://www.coze.cn/store/agent/7581477576880160820?bot_id=true',
+    background: 'AI 内容生产是当前内容创作者的核心痛点：从选题、配图到文案撰写，链路长、效率低。希望通过 Coze 工作流搭建一个自动化 Agent，覆盖搜索、文案、封面、爆款提示等全流程，沉淀一套可复用的"四闭环"Prompt 迭代方法论。',
+    role: '独立完成 Agent 架构设计、工作流搭建、Prompt 编写、自动化测试与上线发布全流程。',
+    highlights: [
+      '基于 Coze 设计 5 套自动化工作流，覆盖小红书/抖音等 5 大平台场景',
+      '内嵌风格规则库，内容发布通过率 92%，累计产出 50+ 篇',
+      '搭建"搜索-文案-封面-爆款提示"四闭环 Prompt 迭代机制',
+    ],
+    results: 'Agent 已在 Coze 商店上线，累计生产内容 50+ 篇，发布通过率 92%。',
   },
   {
     id: 2,
-    title: '智能客服需求分析报告',
-    desc: '基于 NLP 的企业智能客服产品调研与需求分析',
-    tags: ['需求分析', '数据驱动', 'B端'],
+    title: 'Liveat · 食物与情感记录微信小程序',
+    desc: '独立开发的全流程 AI 编程作品，融合 AI 自动打卡 + 多主题拼贴地图',
+    tags: ['Vibe Coding', '0→1', 'C端'],
     color: '#D0C5B8',
     images: [],
-    background: '某中型电商企业客服成本高、响应慢，希望引入智能客服降本增效。',
-    role: '完成竞品研究、用户痛点分析，主导功能优先级评估与 ROI 测算。',
-    highlights: ['调研 5 家主流智能客服产品', '建立 KANO 模型评估功能优先级', '测算 ROI 可缩短人工处理时间 40%'],
-    results: '报告获得导师高度评价，作为课程优秀案例展示。',
     link: '',
-  },
-  {
-    id: 3,
-    title: '健康饮食打卡 App 改版',
-    desc: '针对用户留存率低问题的产品改版提案',
-    tags: ['改版提案', '留存优化', 'C端'],
-    color: '#C8BFA8',
-    images: [],
-    background: '某健康类 App 7 日留存率仅 18%，用户反馈打卡流程繁琐、缺乏成就感。',
-    role: '独立完成数据分析、用户路径梳理与改版方案，制作高保真原型。',
-    highlights: ['分析漏斗数据定位流失节点', '提出「轻打卡 + 社交激励」双路径', '改版后预估 7 日留存提升至 32%'],
-    results: '方案作为产品创新大赛参赛作品，获校级二等奖。',
-    link: '',
+    background: '当代年轻人在快节奏生活中逐渐遗忘"好好吃饭"的体验，市面缺乏一款既轻量又有情感温度的饮食记录工具。希望用 AI 编程工具做一款温暖的"食物情感日记"。',
+    role: '独立完成产品设计、AI 编程实现、上线部署全流程。',
+    highlights: [
+      '使用 AI 编程工具（Vibe Coding）独立完成微信小程序从设计到上线',
+      '功能含 EXIF 时间戳自动记录、多主题可拼贴地图、足迹地图、中英双语适配',
+      '代码量约 3000 行，验证产品全链路独立交付能力',
+    ],
+    results: '完成全栈独立交付 MVP，验证 0→1 产品从设计到上线的完整链路。',
   },
 ]
 
@@ -136,7 +131,7 @@ function ProjectModal({ project, onClose }) {
 
               {project.link && (
                 <a className="btn-primary" href={project.link} target="_blank" rel="noreferrer">
-                  查看完整文档 →
+                  查看完整项目 →
                 </a>
               )}
             </div>
